@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100svh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 6fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+.menu{
+    grid-row: 1 / 5;
+    color: white;
+    background-color: gray;
+}
+.week_statistic{
+    background-color: gray;
+    grid-column: 2 / 4;
+}
+.today{
+    background-color: gray;
+    grid-column: 2 / 3;
+    grid-row: 2 / 5;
+}
+.steps_all{
+    background-color: gray;
+    grid-column: 3 / 4;
+}
+.air_all{
+    background-color: gray;
+    grid-column: 3 / 4;
+}
+.counter_all{
+    background-color: gray;
+    grid-column: 3 / 4;
+}
