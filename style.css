@@ -3,35 +3,93 @@
     padding: 0;
 }
 body{
+    font-family: 'IBM Plex Sans','Source Sans Pro', Helvetica, sans-serif;
+    font-size: 25px;
     height: 100svh;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: 6fr 1fr 1fr 1fr;
     gap: 15px;
 }
 .menu{
     grid-row: 1 / 5;
     color: white;
     background-color: gray;
+    display: flex;
+    flex-direction: column;
 }
 .week_statistic{
     background-color: gray;
     grid-column: 2 / 4;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    margin-right: 15px;
+    margin-top: 15px;
+    height: 500px;
 }
+.steps_week_graf{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(7, 60px);
+    grid-template-rows: 1fr 10px;
+    grid-gap: 10px;
+    text-align: center;
+    height: 1fr;
+}
+.steps_week_graf > div{
+    background-color: red;
+    width: 60px;
+    height: 200px;
+}
+.right_week_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .today{
     background-color: gray;
     grid-column: 2 / 3;
     grid-row: 2 / 5;
+    border-radius: 20px;
+    margin-bottom: 15px;
 }
 .steps_all{
     background-color: gray;
+    margin-right: 15px;
+    border-radius: 20px;
     grid-column: 3 / 4;
+    height: 100px;
 }
 .air_all{
     background-color: gray;
+    margin-right: 15px;
+    border-radius: 20px;
     grid-column: 3 / 4;
+    height: 100px;
 }
 .counter_all{
     background-color: gray;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
     grid-column: 3 / 4;
+    height: 100px;
 }
