@@ -15,8 +15,22 @@ body{
     grid-row: 1 / 5;
     color: white;
     background-color: #BDBDBD;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 25px 1fr;
+    grid-template-rows: repeat(6, 25px);
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: 15px 0 15px 0;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+li{
+    list-style-type: none;
 }
 .week_statistic{
     background-color: #BDBDBD;
@@ -65,6 +79,9 @@ body{
 .week{
     position: absolute;
     top: -25px;
+    background-image: linear-gradient(180deg, #3A3333, #BDBDBD );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .today_statistic{
@@ -84,6 +101,10 @@ body{
     position: absolute;
     bottom: 242px;
     left: 0;
+    background-color: #2AA5A0;
+    background-image: linear-gradient(180deg, #3A3333, #BDBDBD );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .steps_all{
     background-color: #BDBDBD;
@@ -111,4 +132,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+img{
+    width: 25px;
+    filter: invert(1);
 }
